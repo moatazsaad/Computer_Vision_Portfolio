@@ -1,0 +1,24 @@
+The training data can be accessed from this Google Drive link: https://drive.google.com/drive/folders/12Ri74fWkGZ2VY4d-8vdO0hUFSSRriD8W?usp=sharing
+The test data from this link: https://drive.google.com/drive/folders/1iPDS_tzmEIqJ8pxHFVoOFsTJqgR1fZxC?usp=sharing
+
+The provided code implements a deep learning model for the detection of rooftop solar panels using computer vision techniques. Here's a breakdown of the key components and functionalities:
+
+1- Importing Libraries: The code begins with importing necessary libraries and dependencies required for data manipulation, visualization, image processing, and model building.
+
+2- Loading Data: Image data and corresponding labels are loaded from the directory paths specified. 
+
+3- Exploratory Data Analysis (EDA): Initial data exploration is performed by visualizing sample images along with their labels to understand the distribution of classes.
+
+4- Data Preprocessing: Pixel values of the images are scaled to a range of [0, 1] to facilitate model training.
+
+5- Model Building: The convolutional neural network (CNN) architecture is defined using Keras functional API. The model comprises several convolutional layers followed by batch normalization and max pooling layers. The output layer consists of a single neuron with sigmoid activation for binary classification.
+
+6- Cross-Validation: Cross-validation is employed to assess the model's performance using Stratified K-Folds. Class weights are adjusted to handle class imbalance during training.
+
+7- Evaluation Metrics: Metrics such as accuracy, confusion matrix, and ROC curve are used to evaluate the model's performance. True positives, true negatives, false positives, and false negatives are analyzed to understand the model's behavior.
+
+8- Visualization: Sample images from different categories (true positives, false positives, true negatives, false negatives) are displayed to provide insights into the model's predictions.
+
+9- ROC Curve: The Receiver Operating Characteristic (ROC) curve is plotted to visualize the trade-off between true positive rate and false positive rate at various threshold settings.
+
+Overall, the code provides a comprehensive pipeline for training and evaluating a deep learning model for rooftop solar panel detection, showcasing the application of computer vision techniques in real-world scenarios.
